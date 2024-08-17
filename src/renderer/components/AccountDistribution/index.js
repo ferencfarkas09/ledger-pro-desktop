@@ -25,7 +25,7 @@ export default function AccountDistribution({ accounts }: Props) {
           return {
             account: a,
             currency: from,
-            distribution: a.balance.div(total).toNumber(),
+            distribution: a.balance(total).toNumber(),
             amount: a.balance,
           };
         })

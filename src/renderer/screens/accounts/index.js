@@ -19,6 +19,7 @@ import type { ThemedComponent } from "~/renderer/styles/StyleProvider";
 import AccountList from "./AccountList";
 import AccountsHeader from "./AccountsHeader";
 import MigrationBanner from "~/renderer/modals/MigrateAccounts/Banner";
+import { demoAccounts } from "~/demoAccount";
 
 export default function AccountsPage() {
   const mode = useSelector(accountsViewModeSelector);
@@ -26,7 +27,9 @@ export default function AccountsPage() {
   const rawAccounts = useSelector(accountsSelector);
   const starredAccounts = useSelector(starredAccountsSelector);
   const flattenedAccounts = useFlattenSortAccounts({ enforceHideEmptySubAccounts: true });
-  const accounts = mode === "card" ? flattenedAccounts : rawAccounts;
+
+
+  const accounts = demoAccounts;
 
   const history = useHistory();
 

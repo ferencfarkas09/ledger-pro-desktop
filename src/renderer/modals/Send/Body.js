@@ -262,9 +262,9 @@ const Body = ({
   const errorSteps = [];
 
   if (transactionError) {
-    errorSteps.push(3);
+    //errorSteps.push(3);
   } else if (bridgeError) {
-    errorSteps.push(0);
+   // errorSteps.push(0);
   }
 
   const error = transactionError || bridgeError;

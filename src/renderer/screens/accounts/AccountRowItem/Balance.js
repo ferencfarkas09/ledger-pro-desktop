@@ -25,7 +25,7 @@ class Balance extends PureComponent<{
           showCode
           val={balance}
           disableRounding={disableRounding}
-        />
+        /> ({balance})
       </Box>
     );
   }

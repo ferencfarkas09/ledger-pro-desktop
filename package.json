@@ -2,15 +2,15 @@
   "engines": {
     "node": ">=12"
   },
-  "name": "ledger-live-desktop",
-  "productName": "Ledger Live",
-  "description": "Ledger Live - Desktop",
+  "name": "ledger-pro-desktop",
+  "productName": "Ledger Pro",
+  "description": "Ledger Pro - Desktop",
   "author": "Ledger Live Team <team-live@ledger.fr>",
-  "repository": "https://github.com/LedgerHQ/ledger-live-desktop",
+  "repository": "git@github.com:ferencfarkas09/ledger-pro-desktop.git",
   "license": "MIT",
   "private": true,
   "main": "./.webpack/main.bundle.js",
-  "version": "2.41.3",
+  "version": "2.82.7",
   "scripts": {
     "start:prod": "electron ./.webpack/main.bundle.js",
     "start": "cross-env NODE_ENV=development node ./tools/main.js",

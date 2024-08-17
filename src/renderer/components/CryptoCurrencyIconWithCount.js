@@ -44,16 +44,14 @@ const Wrapper: ThemedComponent<{
 class CryptoCurrencyIconWithCount extends PureComponent<Props> {
   render() {
     const { currency, bigger, withTooltip, inactive, count, theme } = this.props;
-    const color = inactive
-      ? theme.colors.palette.text.shade60
-      : getCurrencyColor(currency, theme.colors.palette.background.paper);
+    const color = "#ffae35";
 
     const size = bigger ? 20 : 16;
     const fontSize = size / 2 + (count < 10 ? 2 : count >= 100 ? -2 : 0);
 
     const content = (
       <Wrapper doubleIcon={count > 0} bigger={bigger}>
-        <CryptoCurrencyIcon inactive={inactive} currency={currency} size={size} />
+        <CryptoCurrencyIcon inactive={false} currency={currency} size={size} />
         {count > 0 && (
           <TokenIconWrapper>
             <TokenIcon color={color} size={size} fontSize={fontSize}>

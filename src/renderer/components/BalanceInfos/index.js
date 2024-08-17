@@ -76,6 +76,7 @@ export function BalanceTotal({
   account,
   ...boxProps
 }: BalanceTotalProps) {
+
   return (
     <Box horizontal grow shrink>
       <Box {...boxProps}>

@@ -97,12 +97,12 @@ const CryptoCurrencyIcon = ({
   const IconCurrency = getCryptoCurrencyIcon(currency);
   return IconCurrency ? (
     circle ? (
-      <CircleWrapper size={size} color={color}>
+      <CircleWrapper size={size} color={"#ffae35"}>
         <IconCurrency size={size * 0.8} color={theme.colors.palette.background.paper} />
       </CircleWrapper>
     ) : (
       <Container size={size}>
-        <IconCurrency size={size} color={color} />
+        <IconCurrency size={size} color={"#ffae35"} />
       </Container>
     )
   ) : (

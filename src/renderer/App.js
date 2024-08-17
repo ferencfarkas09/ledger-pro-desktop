@@ -35,6 +35,11 @@ import { themeSelector } from "./actions/general";
 // $FlowFixMe
 import MarketDataProvider from "~/renderer/screens/market/MarketDataProviderWrapper";
 
+String.prototype.toNumber = function() {
+  const num = parseFloat(this);
+  return isNaN(num) ? null : num;
+};
+
 const reloadApp = event => {
   if ((event.ctrlKey || event.metaKey) && event.key === "r") {
     window.api.reloadRenderer();

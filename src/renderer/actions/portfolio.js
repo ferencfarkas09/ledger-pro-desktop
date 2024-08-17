@@ -10,6 +10,7 @@ import {
 import { selectedTimeRangeSelector } from "~/renderer/reducers/settings";
 import { counterValueCurrencySelector } from "./../reducers/settings";
 import { accountsSelector } from "./../reducers/accounts";
+import { demoAccounts } from "~/demoAccount";
 
 // provide redux states via custom hook wrapper
 
@@ -26,7 +27,7 @@ export function useBalanceHistoryWithCountervalue({
 
 export function usePortfolio() {
   const to = useSelector(counterValueCurrencySelector);
-  const accounts = useSelector(accountsSelector);
+  const accounts = demoAccounts;
   const range = useSelector(selectedTimeRangeSelector);
   return usePortfolioRaw({ accounts, range, to });
 }
@@ -38,7 +39,7 @@ export function useCurrencyPortfolio({
   currency: CryptoCurrency | TokenCurrency,
   range: PortfolioRange,
 }) {
-  const accounts = useSelector(accountsSelector);
+  const accounts = demoAccounts;
   const to = useSelector(counterValueCurrencySelector);
   return useCurrencyPortfolioRaw({ accounts, range, to, currency });
 }

@@ -52,7 +52,6 @@ const StepAmount = ({
         isNFTSend={isNFTSend}
         walletConnectSend={walletConnectProxy}
       />
-      {mainAccount ? <CurrencyDownStatusAlert currencies={[mainAccount.currency]} /> : null}
       {error ? <ErrorBanner error={error} /> : null}
       {account && transaction && mainAccount && (
         <Fragment key={account.id}>

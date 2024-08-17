@@ -30,7 +30,7 @@ export const BridgeSyncProvider = ({ children }: { children: React$Node }) => {
     accounts.forEach(account => {
       const prev = accountsRef.current.find(a => a.id === account.id);
       if (prev !== account && hasOngoingSync(account.id)) {
-        command("AccountSyncSet")({ account: toAccountRaw(account) }).subscribe();
+        //command("AccountSyncSet")({ account: toAccountRaw(account) }).subscribe();
       }
     });
     accountsRef.current = accounts;
@@ -52,7 +52,7 @@ export const BridgeSyncProvider = ({ children }: { children: React$Node }) => {
   return (
     <BridgeSync
       accounts={accounts}
-      updateAccountWithUpdater={updateAccount}
+      updateAccountWithUpdater={() => {}}
       recoverError={recoverError}
       trackAnalytics={track}
       prepareCurrency={prepareCurrency}

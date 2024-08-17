@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af89c345-f4f8-4e3e-944b-2c71e395de3a" name="Changes" comment="Working and its fine">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demoAccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electron-builder.yml" beforeDir="false" afterPath="$PROJECT_DIR$/electron-builder.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/live-common-set-supported-currencies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/live-common-set-supported-currencies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/actions/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/actions/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/bridge/BridgeSyncContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/bridge/BridgeSyncContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/AccountDistribution/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/AccountDistribution/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/BalanceInfos/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/BalanceInfos/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/CryptoCurrencyIcon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/CryptoCurrencyIcon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/CryptoCurrencyIconWithCount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/CryptoCurrencyIconWithCount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/components/MainSideBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/components/MainSideBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/modals/FullNode/steps/StepAccounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/modals/FullNode/steps/StepAccounts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/modals/Send/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/modals/Send/Body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/modals/Send/steps/StepAmount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/modals/Send/steps/StepAmount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/reducers/accounts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/reducers/accounts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountRowItem/Balance.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountRowItem/Balance.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountRowItem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountRowItem/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountSyncStatusIndicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/screens/accounts/AccountSyncStatusIndicator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/screens/accounts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/screens/accounts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/screens/dashboard/GlobalSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/screens/dashboard/GlobalSummary.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ferencfarkas09&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:ferencfarkas09/ledger-pro-desktop.git&quot;,
+    &quot;accountId&quot;: &quot;54a89bba-e13a-47c7-ae5a-96357636ada0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2khqAkptMFXpvMrmiJQzmKnenji" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "javascript.nodejs.core.library.configured.version": "14.21.3",
+    "javascript.nodejs.core.library.typings.version": "14.18.63",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "/Users/macbook/.nvm/versions/node/v14.21.3/bin/node",
+    "nodejs_package_manager_path": "/usr/local/lib/node_modules/yarn",
+    "npm.build.executor": "Run",
+    "npm.draft-release.executor": "Run",
+    "npm.playwright.executor": "Run",
+    "npm.release.executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.start:prod.executor": "Run",
+    "settings.editor.selected.configurable": "settings.nodejs",
+    "ts.external.directory.path": "/Users/macbook/WebstormProjects/ledger-pro-desktop/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "ECMA Script Level 4"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.draft-release">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="draft-release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="draft-release" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="playwright" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="playwright" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="release" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="$USER_HOME$/.nvm/versions/node/v14.21.3/bin/node" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.draft-release" />
+        <item itemvalue="npm.release" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.playwright" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af89c345-f4f8-4e3e-944b-2c71e395de3a" name="Changes" comment="" />
+      <created>1723746014572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723746014572</updated>
+      <workItem from="1723746016419" duration="1233000" />
+      <workItem from="1723747859519" duration="1112000" />
+      <workItem from="1723749678561" duration="7878000" />
+      <workItem from="1723799400443" duration="15359000" />
+      <workItem from="1723815775921" duration="39000" />
+      <workItem from="1723815892360" duration="1886000" />
+      <workItem from="1723819023881" duration="23345000" />
+      <workItem from="1723890156852" duration="1989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Working and its fine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working and its fine" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/renderer/screens/dashboard/index.js</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

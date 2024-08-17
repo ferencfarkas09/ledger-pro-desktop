@@ -59,6 +59,8 @@ export default function AccountList({ accounts, range, onAccountClick, mode }: P
     }
   }
 
+  visibleAccounts.push(accounts)
+
   return (
     <div style={{ paddingBottom: 70 }}>
       <GenericBox horizontal p={0} alignItems="center">

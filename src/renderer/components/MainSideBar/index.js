@@ -215,7 +215,7 @@ const MainSideBar = () => {
   const navigationLocked = useSelector(isNavigationLocked);
   const collapsed = useSelector(sidebarCollapsedSelector);
   const lastSeenDevice = useSelector(lastSeenDeviceSelector);
-  const noAccounts = useSelector(accountsSelector).length === 0;
+  const noAccounts = React.useState(false);
   const hasStarredAccounts = useSelector(starredAccountsSelector).length > 0;
   const displayBlueDot = useManagerBlueDot(lastSeenDevice);
   const firstTimeLend = useSelector(state => state.settings.firstTimeLend);
@@ -354,7 +354,7 @@ const MainSideBar = () => {
                   iconActiveColor="wallet"
                   isActive={location.pathname.startsWith("/account")}
                   onClick={handleClickAccounts}
-                  disabled={noAccounts}
+                  disabled={false}
                   collapsed={secondAnim}
                 />
                 <SideBarListItem
@@ -372,7 +372,7 @@ const MainSideBar = () => {
                   icon={IconSend}
                   iconActiveColor="wallet"
                   onClick={handleOpenSendModal}
-                  disabled={noAccounts || navigationLocked}
+                  disabled={navigationLocked}
                   collapsed={secondAnim}
                 />
                 <SideBarListItem
@@ -381,7 +381,7 @@ const MainSideBar = () => {
                   icon={IconReceive}
                   iconActiveColor="wallet"
                   onClick={handleOpenReceiveModal}
-                  disabled={noAccounts || navigationLocked}
+                  disabled={navigationLocked}
                   collapsed={secondAnim}
                 />
                 <SideBarListItem
@@ -425,7 +425,7 @@ const MainSideBar = () => {
                   isActive={location.pathname === "/card"}
                   onClick={handleClickCard}
                   collapsed={secondAnim}
-                  disabled={isCardDisabled}
+                  disabled={true}
                 />
                 <SideBarListItem
                   id={"manager"}

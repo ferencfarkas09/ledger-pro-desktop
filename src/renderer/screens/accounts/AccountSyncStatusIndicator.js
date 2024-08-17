@@ -158,6 +158,8 @@ const AccountSyncStatusIndicator = ({
     clearTimeout(timeout.current);
   }, []);
 
+  return <StatusUpToDate showSatStackIcon={showSatStackIcon} onClick={onClick} />
+
   if (needsMigration) {
     return <StatusNeedsMigration onClick={onClick} />;
   }

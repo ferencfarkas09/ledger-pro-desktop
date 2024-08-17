@@ -210,7 +210,11 @@ class AccountRowItem extends PureComponent<Props, State> {
 
     if (account.type !== "Account") {
       currency = account.token;
-      unit = account.token.units[0];
+      unit = (account && account.token && account.token.units) ? account.token.units[0] : {
+        name: "bitcoin",
+        code: "BTC",
+        magnitude: 8
+      };
       mainAccount = parentAccount;
       isToken = mainAccount && listTokenTypesForCryptoCurrency(mainAccount.currency).length > 0;
 

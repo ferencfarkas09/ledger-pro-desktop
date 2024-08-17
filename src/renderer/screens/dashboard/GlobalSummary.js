@@ -35,7 +35,7 @@ export default function PortfolioBalanceSummary({
   const discreetMode = useSelector(discreetModeSelector);
 
   const renderTickY = useCallback(
-    (val: number) => formatShort(counterValue.units[0], BigNumber(val)),
+    (val: number) => formatShort(counterValue.units[0], val),
     [counterValue],
   );
 
@@ -43,6 +43,8 @@ export default function PortfolioBalanceSummary({
     (data: BalanceHistoryData) => <Tooltip data={data} counterValue={counterValue} range={range} />,
     [counterValue, range],
   );
+
+  console.log("portfolio",portfolio)
 
   return (
     <Card p={0} py={5}>
@@ -52,7 +54,7 @@ export default function PortfolioBalanceSummary({
           isAvailable={portfolio.balanceAvailable}
           since={selectedTimeRange}
           valueChange={portfolio.countervalueChange}
-          totalBalance={portfolio.balanceHistory[portfolio.balanceHistory.length - 1].value}
+          totalBalance={portfolio.countervalueChange.value}
           handleChangeSelectedTime={handleChangeSelectedTime}
         />
       </Box>
@@ -98,7 +100,7 @@ function Tooltip({ data, counterValue }: { data: BalanceHistoryData, counterValu
         color="palette.text.shade100"
         showCode
         unit={counterValue.units[0]}
-        val={data.value}
+        val={data || data.value}
       />
       <Box ff="Inter|Regular" color="palette.text.shade60" fontSize={3} mt={2}>
         <FormattedDate date={data.date} format="L" />

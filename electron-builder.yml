@@ -1,7 +1,7 @@
-appId: com.ledger.live
+appId: com.ledger.pro
 
 protocols:
-  name: Ledger Live
+  name: Ledger Pro
   schemes:
     - ledgerlive
 

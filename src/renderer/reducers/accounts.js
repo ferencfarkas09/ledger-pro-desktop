@@ -25,9 +25,10 @@ import type { State } from ".";
 import isEqual from "lodash/isEqual";
 
 import useCompoundAccountEnabled from "../screens/lend/useCompoundAccountEnabled";
+import { demoAccounts } from "~/demoAccount";
 
 export type AccountsState = Account[];
-const state: AccountsState = [];
+const state: AccountsState = { accounts: demoAccounts };
 
 const handlers: Object = {
   REORDER_ACCOUNTS: (
@@ -58,18 +59,12 @@ const handlers: Object = {
       payload: { accountId, updater },
     }: { payload: { accountId: string, updater: Account => Account } },
   ): AccountsState =>
-    state.map(existingAccount => {
-      if (existingAccount.id !== accountId) {
-        return existingAccount;
-      }
-      return updater(existingAccount);
-    }),
+    state,
 
   REMOVE_ACCOUNT: (
     state: AccountsState,
     { payload: account }: { payload: Account },
-  ): AccountsState => state.filter(acc => acc.id !== account.id),
-
+  ): AccountsState => state,
   CLEAN_FULLNODE_DISCONNECT: (state: AccountsState): AccountsState =>
     state.filter(acc => acc.currency.id !== "bitcoin"),
 
@@ -84,7 +79,7 @@ const handlers: Object = {
 
 // Selectors
 
-export const accountsSelector = (state: { accounts: AccountsState }): Account[] => state.accounts;
+export const accountsSelector = (state: { accounts: demoAccounts }): Account[] => state.accounts;
 
 // NB some components don't need to refresh every time an account is updated, usually it's only
 // when the balance/name/length/starred/swapHistory of accounts changes.

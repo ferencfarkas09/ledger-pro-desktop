@@ -5,6 +5,7 @@ if (process.env.PLAYWRIGHT_RUN) {
   });
 }
 
+
 if (!process.env.IS_INTERNAL_PROCESS) {
   // Main electron thread
   require("./main");

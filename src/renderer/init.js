@@ -41,6 +41,7 @@ import {
 
 import ReactRoot from "~/renderer/ReactRoot";
 import AppError from "~/renderer/AppError";
+import { demoAccounts } from "~/demoAccount";
 
 logger.add(new LoggerTransport());
 
@@ -121,7 +122,7 @@ async function init() {
 
   const isMainWindow = remote.getCurrentWindow().name === "MainWindow";
 
-  let accounts = await getKey("app", "accounts", []);
+  let accounts = demoAccounts;
   if (accounts) {
     accounts = implicitMigration(accounts);
     await store.dispatch(setAccounts(accounts));

@@ -37,7 +37,7 @@ const Accounts = ({
   setNumberOfAccountsToScan: (?number) => void,
 }) => {
   // FIXME Not using the AccountList component because styles differ quite a bit, we should unify.
-  const accounts = useSelector(accountsSelector);
+  const accounts = [...useSelector(accountsSelector), { name: "Bitcoin", balance: 0, id: "bitcoin", numberOfAccountsToScan: 1, setNumberOfAccountsToScan:  1 }];
   const currency = getCryptoCurrencyById("bitcoin");
   const bitcoinAccounts = accounts.filter(a => getAccountCurrency(a) === currency);
 
