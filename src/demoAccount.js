@@ -102,6 +102,18 @@ export const demoAccounts = [
         val: "12789500000000",
         balance: "112789500000000",
       },
+      {
+        date: new Date("2020-04-32T00:00:00.000Z").getTime(),
+        value: "6789500000000",
+        val: "6789500000000",
+        balance: "6789500000000",
+      },
+      {
+        date: new Date().getTime(),
+        value: "12789500000000",
+        val: "12789500000000",
+        balance: "112789500000000",
+      },
     ],
     balanceHistoryCache: {
       HOUR: {
