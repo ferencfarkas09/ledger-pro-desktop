@@ -70,10 +70,11 @@ const buildTasks = args => [
     task: async () => {
       const commands = ["dist:internal"];
       if (args.dir) commands.push("--dir");
+      commands.push("--publish", "never");
       if (args.publish) {
-        commands.push("--publish", "always");
+        //commands.push("--publish", "always");
       } else {
-        commands.push("-c.afterSign='lodash/noop'");
+        //commands.push("-c.afterSign='lodash/noop'");
         commands.push("--publish", "never");
       }
       if (args.nightly) {
@@ -101,34 +102,6 @@ const draftTasks = args => {
   let draft;
 
   return [
-    {
-      title: "Health checks",
-      task: () => setupList(healthChecksTasks, args),
-    },
-    {
-      title: "Authenticate on GitHub",
-      task: ctx => {
-        const { repo, tag, token } = ctx;
-        draft = new Draft(repo, tag, token);
-      },
-    },
-    {
-      title: "Check if draft already exists",
-      task: async ctx => {
-        ctx.draftExists = await draft.check();
-      },
-    },
-    {
-      title: "Create draft on GitHub",
-      skip: ctx => (ctx.draftExists ? "Draft already exists." : false),
-      task: () => {
-        let body = "";
-        if (args.nightly) {
-          body = process.env.RELEASE_BODY;
-        }
-        draft.create(body);
-      },
-    },
   ];
 };
 
@@ -145,11 +118,6 @@ const mainTask = (args = {}) => {
       title: "Cleanup",
       skip: () => (dirty ? "--dirty flag passed" : false),
       task: () => setupList(cleaningTasks, args),
-    },
-    {
-      title: "Setup",
-      skip: () => (dirty ? "--dirty flag passed" : false),
-      task: () => setupList(setupTasks, args),
     },
     {
       title: publish ? "Build and publish" : "Build",
@@ -202,10 +170,6 @@ yargs
         .option("dirty", {
           type: "boolean",
           describe: "Don't clean-up and rebuild dependencies before building",
-        })
-        .option("publish", {
-          type: "boolean",
-          describe: "Publish the created artifacts on GitHub as a draft release",
         }),
     args => runTasks(mainTask, args),
   )
@@ -214,17 +178,6 @@ yargs
     "Run health checks",
     () => {},
     args => runTasks(healthChecksTasks, args),
-  )
-  .command(
-    "draft",
-    "Prepare release on GitHub",
-    yargs =>
-      yargs.option("nightly", {
-        alias: "n",
-        type: "boolean",
-        describe: "used to disabled some check for nightly build",
-      }),
-    args => runTasks(draftTasks, args),
   )
   .option("verbose", {
     alias: "v",

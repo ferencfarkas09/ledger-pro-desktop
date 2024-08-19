@@ -1,6 +1,7 @@
 import { BigNumber } from "bignumber.js";
 
-export const demoAccounts = [
+export const demoAccounts = [];
+export const demoAccounts_full = [
   {
     id:
       "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit",
@@ -49,36 +50,47 @@ export const demoAccounts = [
     ],
     blockHeight: 0,
     syncHash: "sync-hash-1",
-    creationDate: new Date("2019-04-17T00:00:00.000Z"),
-    operationsCount: 2,
+    creationDate: new Date("2012-04-17T00:00:00.000Z"),
+    operationsCount: 3,
     operations: [
       {
-        id:
-          "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit-02c10387033a317337469188925089a8362079cf168c246f8130e2d483589e8b-OUT",
+        id: "js:2:bitcoin:xpub6DLjoHJp1F4eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit-6660bad9a2e25a13a679120d3a4d23225c3d6e05fcaf2ccd4b575c059f689dda-IN",
+        hash: "6660bad9a2e25a23a679120d3a4d23225c3d6e05fcaf2ccd4b575c059f689dda",
+        type: "IN",
+        senders: ["bc1qamgjuxaywqls56h7rg7afga3m6rgqwfkew688k"],
+        recipients: ["bc1q3me9zkdf74pr6hn6ysmentqskz0jdk4x7wgrgw"],
+        accountId: "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit",
+        blockHash: "00000000000000000002dac54a21fad4382519deb9652afcb3f77d42756e161b",
+        blockHeight: 756850,
+        extra: {},
+        date: new Date("2023-07-15T07:02:26.000Z"),
+        value: new BigNumber("2999000000000"),
+        fee: "765133",
+        hasFailed: false,
+      },
+      {
+        id: "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit-02c10387033a317337469188925089a8362079cf168c246f8130e2d483589e8b-OUT",
         hash: "02c10387033a317337469188925089a8362079cf168c246f8130e2d483589e8b",
         type: "OUT",
         senders: ["bc1q3me9zkdf74pr6hn6ysmentqskz0jdk4x7wgrgw"],
         recipients: ["bc1qkea77sq368h70sly5k3vp266gkr9ykrygy7mpf"],
-        accountId:
-          "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit",
+        accountId: "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit",
         blockHash: "00000000000000000002f64eca8079186511e92a905e87b9e83ecb5f0c30241b",
         blockHeight: 856906,
         extra: {},
-        date: new Date("2024-08-15T15:48:11.000Z"),
+        date: new Date("2024-03-15T15:48:11.000Z"),
         value: new BigNumber("2324200000"),
         fee: "4402",
         transactionSequenceNumber: 4294967295,
         hasFailed: false,
       },
       {
-        id:
-          "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit-6660bad9a2e25a13a679120d3a4d23225c3d6e05fcaf2ccd4b575c059f689dda-IN",
+        id: "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit-6660bad9a2e25a13a679120d3a4d23225c3d6e05fcaf2ccd4b575c059f689dda-IN",
         hash: "6660bad9a2e25a13a679120d3a4d23225c3d6e05fcaf2ccd4b575c059f689dda",
         type: "IN",
         senders: ["bc1qamgjuxaywqls56h7rg7afga3m6rgqwfkew688k"],
         recipients: ["bc1q3me9zkdf74pr6hn6ysmentqskz0jdk4x7wgrgw"],
-        accountId:
-          "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit",
+        accountId: "js:2:bitcoin:xpub6DLjoHJp1F3eoWRzMDNNiiwDzUN8Wv47NwqPJcJT3YsQUHZgQzn3pzN4pYTNgERytsDVMbmSye4t4BE6gB1tAUj718Nf3c5eAkPhtJhBM9K:native_segwit",
         blockHash: "00000000000000000002dac54a21fad4382519deb9652afcb3f77d42756e161b",
         blockHeight: 856850,
         extra: {},
@@ -91,11 +103,17 @@ export const demoAccounts = [
     pendingOperations: [],
     currencyId: "bitcoin",
     unitMagnitude: 8,
-    lastSyncDate: new Date("2026-04-17T00:00:00.000Z"),
+    lastSyncDate: new Date(),
     balance: "12789500000000",
     spendableBalance: "12789500000000",
     nfts: [],
     balanceHistory: [
+      {
+        date: new Date("2015-07-14T00:00:00.000Z").getTime(),
+        value: "0",
+        val: "0",
+        balance: "0",
+      },
       {
         date: new Date("2019-07-14T00:00:00.000Z").getTime(),
         value: "0",
@@ -112,69 +130,70 @@ export const demoAccounts = [
         date: new Date("2019-07-15T00:00:00.000Z").getTime(),
         value: "1228900000000",
         val: "1228900000000",
-        balance: "1228900000000",
+        balance: "1228900000000"
       },
       {
-        date: new Date("2020-04-32T00:00:00.000Z").getTime(),
+        date: new Date("2020-02-01T00:00:00.000Z").getTime(),
         value: "6789500000000",
         val: "6789500000000",
-        balance: "6789500000000",
+        balance: "6789500000000"
       },
       {
-        date: new Date("2024-04-32T00:00:00.000Z").getTime(),
+        date: new Date("2022-07-21T00:00:00.000Z").getTime(),
+        value: "6789500000000",
+        val: "6789500000000",
+        balance: "6789500000000"
+      },
+      {
+        date: new Date("2023-02-01T00:00:00.000Z").getTime(),
+        value: "6789500000000",
+        val: "6789500000000",
+        balance: "6789500000000"
+      },
+      {
+        date: new Date("2023-12-01T00:00:00.000Z").getTime(),
+        value: "6789500000000",
+        val: "6789500000000",
+        balance: "6789500000000"
+      },
+      {
+        date: new Date("2024-03-12T00:00:00.000Z").getTime(),
         value: "18789500004000",
         val: "18789500004000",
-        balance: "18789500004000",
+        balance: "18789500004000"
+      },
+      {
+        date: new Date("2024-03-12T00:00:00.000Z").getTime(),
+        value: "13989500004000",
+        val: "13989500004000",
+        balance: "13989500004000"
       },
       {
         date: new Date().getTime(),
         value: "12789500000000",
         val: "12789500000000",
-        balance: "112789500000000",
+        balance: "112789500000000"
       },
     ],
     balanceHistoryCache: {
       HOUR: {
-        latestDate: new Date("2019-07-15T00:00:00.000Z").getTime(),
+        latestDate: new Date().getTime(),
         balances: [
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
+          ...Array(60).fill("12789500000000")
         ],
       },
       DAY: {
-        latestDate: new Date("2019-07-15T00:00:00.000Z").getTime(),
+        latestDate: new Date().getTime(),
         balances: [
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
+          ...Array(24).fill("12789500000000")
         ],
       },
       WEEK: {
-        latestDate: new Date("2019-07-15T00:00:00.000Z").getTime(),
+        latestDate: new Date().getTime(),
         balances: [
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
-          "12789500000000",
+          ...Array(7).fill("12789500000000")
         ],
+      },
     },
     endpointConfig: null,
     xpub:
@@ -200,5 +219,5 @@ export const demoAccounts = [
     elrondResources: null,
     cryptoOrgResources: null,
     solanaResources: null,
-  },
+  }
 ];

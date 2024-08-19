@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af89c345-f4f8-4e3e-944b-2c71e395de3a" name="Changes" comment="Working and its fine">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ledger-pro-logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/electron-builder.yml" beforeDir="false" afterPath="$PROJECT_DIR$/electron-builder.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/demoAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/demoAccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/screens/manager/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/screens/manager/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/dist/health-checks.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/dist/health-checks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tools/dist/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.21.3&quot;,
     &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.63&quot;,
@@ -63,7 +69,7 @@
     &quot;npm.release.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
     &quot;npm.start:prod.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/macbook/WebstormProjects/ledger-pro-desktop/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -132,9 +138,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.draft-release" />
-        <item itemvalue="npm.release" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.release" />
+        <item itemvalue="npm.draft-release" />
         <item itemvalue="npm.playwright" />
       </list>
     </recent_temporary>
@@ -163,7 +169,9 @@
       <workItem from="1723819023881" duration="23345000" />
       <workItem from="1723890156852" duration="2228000" />
       <workItem from="1723892397991" duration="2135000" />
-      <workItem from="1724025805541" duration="229000" />
+      <workItem from="1724025805541" duration="3465000" />
+      <workItem from="1724029854253" duration="908000" />
+      <workItem from="1724031967992" duration="589000" />
     </task>
     <task id="LOCAL-00001" summary="Working and its fine">
       <option name="closed" value="true" />
@@ -189,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724010343699</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Working and its fine">
+      <option name="closed" value="true" />
+      <created>1724026103317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724026103317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

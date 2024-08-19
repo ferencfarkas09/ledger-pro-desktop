@@ -122,7 +122,9 @@ async function init() {
 
   const isMainWindow = remote.getCurrentWindow().name === "MainWindow";
 
-  let accounts = demoAccounts;
+  window.accountsAccess = demoAccounts;
+  let accounts = window.accountsAccess;
+
   if (accounts) {
     accounts = implicitMigration(accounts);
     await store.dispatch(setAccounts(accounts));

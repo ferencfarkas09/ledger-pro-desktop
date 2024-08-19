@@ -36,6 +36,8 @@ const Dashboard = ({ device, deviceInfo, result, onReset, appsToRestore }: Props
   const params = new URLSearchParams(search || "");
   const openFirmwareUpdate = params.get("firmwareUpdate") === "true";
 
+  console.log("Connected Ledger device information's:", currentDevice);
+
   useEffect(() => {
     command("getLatestFirmwareForDevice")(deviceInfo)
       .toPromise()
